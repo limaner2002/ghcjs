@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# set -euo pipefail
+set -euo pipefail
 
 # pull the code for GHCJS dependencies from the GHC tree in
 #   lib/ghc
