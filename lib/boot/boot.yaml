@@ -80,4 +80,5 @@ programs:
   alex:       alex
   happy:      happy
   git:        git
+  emcc:       emcc
   autoreconf: autoreconf

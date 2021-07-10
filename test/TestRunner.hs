@@ -85,7 +85,7 @@ main = shellyE . silently . withTmpDir $ liftIO . setupTests
 showParseError :: ParseError -> String
 showParseError (ErrorMsg xs)          = "error: " ++ xs
 showParseError (InfoMsg xs)           = "info: " ++ xs
-showParseError ShowHelpText           = "help!"
+showParseError (ShowHelpText _)           = "help!"
 showParseError UnknownError           = "unknown"
 showParseError (MissingError {})      = "missing"
 showParseError (ExpectsArgError xs)   = "expecting argument: " ++ xs
