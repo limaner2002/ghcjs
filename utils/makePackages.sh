@@ -168,7 +168,8 @@ copy_patch_boot_package_sdist() {
   (
   cd "$PKGSRC"
   rm -f "dist-install/$PKG-*.tar.gz"
-  cabal "${CMDPREFIX}sdist" --builddir=dist-install
+  # TODO: check if the `v1-` prefix is actually supported by cabal-install-3.4.0.0
+  cabal "sdist" --builddir=dist-install
   )
   # unpack the source distribution
   for SRCDISTTMP in $PKGSRC/dist-install/$PKG-*.tar.gz; do
