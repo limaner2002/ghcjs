@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+
+# We set bash in a strict mode so that errors are not silently
+# discarded. See the gist in the link below for an explanation for why
+# this is good and what each of the arguments does.
+# https://gist.github.com/mohanpedala/1e2ff5661761d3abd0385e8223e16425
 set -euxo pipefail
 
 # pull the code for GHCJS dependencies from the GHC tree in
